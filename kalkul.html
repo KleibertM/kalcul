@@ -3,19 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <title>Kalkul</title>
+
+
     <link href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet" />
     <script src="Display.js" type="text/javascript"></script>
     <script src="Calculadora.js" type="text/javascript"></script>
     <script src="index.js" type="text/javascript" defer></script>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     
     <div class="container">
-        <h1 class="title">KALKUL</h1>
+        <div class="box-title">
+            <img src="https://cdn-icons-png.flaticon.com/512/346/346399.png" alt="Calculadora Icon">
+            <h1 class="title"> Kalcul</h1>
+        </div>
+        
         <div class="calculadora">
-            <div class="display">
+            <div class="display" >
                 <div id="valor-anterior"></div>
                 <div id="valor-actual"></div>
             </div>
@@ -39,5 +49,6 @@
             <button class="operador" value="igual">=</button>
         </div>
     </div>
+    <p>Creador: <span>Kleibert Medina</span> <a href="https://github.com/KleibertM" target="_blank" class="btn border border-primary-subtle" ><i class='bx bxl-github'></i></a></p>
 </body>
 </html>
