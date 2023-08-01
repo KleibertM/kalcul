@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Kalkul</title>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="JS/Display.js" type="text/javascript"></script>
+    <script src="JS/Calculadora.js" type="text/javascript"></script>
+    <script src="JS/index.js" type="text/javascript" defer></script>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  
+    <div class="container">
+        <div class="box-title">
+            <img src="https://cdn-icons-png.flaticon.com/512/346/346399.png" alt="Calculadora Icon">
+            <h1 class="title"> Kalcul</h1>
+        </div>
+        
+        <div class="calculadora">
+            <div class="display" >
+                <div id="valor-anterior"></div>
+                <div id="valor-actual"></div>
+            </div>
+            <button class="col-2" onclick="display.borrarTodo()">C</button>
+            <button onclick="display.borrar()">&larr;</button>
+            <button class="operador" value="dividir">%</button>
+            <button class="numero">7</button>
+            <button class="numero">8</button>
+            <button class="numero">9</button>
+            <button class="operador" value="multiplicar">X</button>
+            <button class="numero">4</button>
+            <button class="numero">5</button>
+            <button class="numero">6</button>
+            <button class="operador" value="restar">-</button>
+            <button class="numero">1</button>
+            <button class="numero">2</button>
+            <button class="numero">3</button>
+            <button class="operador" value="sumar">+</button>
+            <button class="col-2 numero">0</button>
+            <button class="numero">.</button>
+            <button class="operador" value="igual">=</button>
+        </div>
+
+        <div class="box-conta" >
+            <div class="conta-cre" >
+                <p>Creador: Kleibert MeDina</p>
+            </div>
+            <div class="conta" >
+                <a href="https://github.com/KleibertM" target="_blank" class="btn border border-primary-subtle" ><i class='bx bxl-github'></i></a>
+                <a href="https://wa.me/51912933385?text=Hola, me ayudas con mi Pagina Web" target="_blank" class="btn border border-primary-subtle"><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://www.facebook.com/kleibertjose.medinagomez/" target="_blank" class="btn border border-primary-subtle"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.tiktok.com/@kleibertkode?_t=8e6iwC203OA&_r=1" target="_blank" class="btn border border-primary-subtle"><i class='bx bxl-tiktok'></i></a>
+                <a href="https://instagram.com/kleibert_v?igshid=MzNlNGNkZWQ4Mg==" target="_blank" class="btn border border-primary-subtle"><i class='bx bxl-instagram'></i></a>
+                <a href="mailto:kleibertmedina@gmail.com" class="btn border border-primary-subtle"><i class='bx bxl-gmail'></i></a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
