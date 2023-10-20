@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: aquamarine;
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.calculadora {
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 20px 20px black;
+    background-color: rgb(251, 251, 251);
+    
+    #result {
+        height: 7rem;
+    }
+    #display{
+        color: rgb(101, 98, 98);
+        margin: 0 .5rem;
+        height: 6rem;
+        width: auto;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        background-color: rgb(160, 202, 247);
+        border-radius: .5rem;
+        border: inset;
+        padding: 0 .5rem;
+    }
+    
+    #clear {
+        background-color: rgb(249, 249, 249);
+        color: red;
+    }
+    .btn-number{
+        background-color: aquamarine;
+    }
+    .btn-operador{
+        background-color: rgb(130, 146, 236);
+    }
+    
+    #result {
+        background-color: coral;
+        color: white;
+    }
+}
+
+
+.tema-toggler{
+    position: absolute;
+    top: 1rem;
+    right: .5rem;
+    color: #000000;
+    cursor: pointer;
+    z-index: 1;
+    transition: .2s ease-in-out;
+    &:hover{
+        transform: translateY(-2px);
+    }
+    
+    &::before{
+        position: absolute;
+        content: '';
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid rgb(180, 180, 180);
+        background-color: #dcdcdc;
+        z-index: -1;
+        color: black;
+        box-shadow: 0 3px 3px black;
+        
+    }
+}
+
+.tema-toggler .active {
+    color: #333;
+    &::before{
+        background-color: #fff;
+    }
+    
+}
+
+button {
+    height: 3rem;
+    width: 3rem;
+    border: inset;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: .5rem;
+    transition: all .2s ease;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+
+/* DARk THEME */
+
+.dark {
+    background-color: #000000;
+    #result {
+        height: 7rem;
+    }
+    #display{
+        background-color: rgb(98, 98, 235);
+        color: black;
+    }
+    
+    #clear {
+        background-color: rgb(80, 94, 220);
+        color: white;
+    }
+    .btn-number{
+        background-color: rgb(136, 206, 181);
+        color: black;
+    }
+    .btn-operador{
+        background-color: rgb(243, 240, 153);
+        color: black;
+    }
+    
+    #result {
+        background-color: rgb(210, 97, 95);
+        color: white;
+    }
+}
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkuladora</title>
+
+    <meta name="description" content="Una calculadora en línea simple">
+    <meta name="keywords" content="calculadora, matemáticas, herramienta, cálculos">
+    <meta name="author" content="Kleibert Medina">
+    <meta name="robots" content="index, follow">
+
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3771/3771278.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script defer src="js/index.js" ></script>
+
+</head>
+<body>
+    <div class="container" >
+        <div class="calculadora dark" >
+            <div class="tema-toggler active">
+                <i class='toggler-icon bx bxs-sun' ></i>
+            </div>
+            <div class="display-screen">
+                <div id="display" >
+                </div>
+            </div>
+            <div class="buttons">
+                <table>
+                    <tr>
+                        <td>
+                            <button class="btn-operador" id="clear"><i class='bx bx-revision'></i></button>
+                        </td>
+                        <td>
+                            <button class="btn-operador" id="/">/</button>
+                        </td>
+                        <td>
+                            <button class="btn-operador" id="*">X</button>
+                        </td>
+                        <td>
+                            <button class="btn-operador" id="borrar"><i class='bx bxs-eraser'></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="btn-number" id="7">7</button>
+                        </td>
+                        <td>
+                            <button class="btn-number" id="8">8</button>
+                        </td>
+                        <td>
+                            <button class="btn-number" id="9">9</button>
+                        </td>
+                        <td>
+                            <button class="btn-operador" id="-">-</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button class="btn-number" id="4">4</button>
+                        </td>
+                        <td>
+                            <button class="btn-number" id="5">5</button>
+                        </td>
+                        <td>
+                            <button class="btn-number" id="6">6</button>
+                        </td>
+                        <td>
+                            <button class="btn-operador" id="+">+</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button class="btn-number" id="1">1</button>
+                        </td>
+                        <td>
+                            <button class="btn-number" id="2">2</button>
+                        </td>
+                        <td>
+                            <button class="btn-number" id="3">3</button>
+                        </td>
+                        <td rowspan="2">
+                            <button class="btn-operador" id="result"><i class='bx bxs-send'></i></button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button class="btn-number" id=".">.</button>
+                        </td>
+                        <td>
+                            <button class="btn-number" id="0">0</button>
+                        </td>
+                        <td>
+                            <button class="btn-number" id="00">00</button>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
